@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
 
+<html lang="es">
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ANDREAS INDUMENTARIA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,12 +20,10 @@ box-sizing:border-box;
 
 body{
 
-font-family:Arial, sans-serif;
-
-background-image:
+background:
 linear-gradient(
-rgba(0,0,0,0.45),
-rgba(0,0,0,0.45)
+rgba(0,0,0,0.35),
+rgba(0,0,0,0.35)
 ),
 url("8450b8f4-45b0-481b-ad07-8da69cca45ff.jpg");
 
@@ -31,52 +31,62 @@ background-size:cover;
 background-position:center;
 background-attachment:fixed;
 
+font-family:'Montserrat',sans-serif;
+
 min-height:100vh;
 
 display:flex;
 justify-content:center;
 align-items:center;
 
+padding:20px;
+
 }
 
 .contenedor{
 
-width:90%;
-max-width:450px;
+width:100%;
+max-width:500px;
 
-background:rgba(245,240,232,0.92);
+background:rgba(255,255,255,0.12);
 
-padding:40px;
+backdrop-filter:blur(18px);
 
-border-radius:25px;
+border:1px solid rgba(255,255,255,0.15);
+
+border-radius:30px;
+
+padding:40px 30px;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.25);
 
 text-align:center;
 
-backdrop-filter:blur(6px);
+}
 
-box-shadow:0 8px 25px rgba(0,0,0,0.2);
+.logo{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:60px;
+
+letter-spacing:6px;
+
+color:#fff;
+
+margin-bottom:5px;
 
 }
 
-h1{
+.frase{
 
-color:#3d3128;
+color:#f4ede5;
 
-font-size:40px;
-
-letter-spacing:4px;
-
-margin-bottom:10px;
-
-}
-
-.subtitulo{
-
-color:#7a6755;
+font-size:14px;
 
 margin-bottom:30px;
 
-font-size:16px;
+letter-spacing:1px;
 
 }
 
@@ -92,25 +102,33 @@ margin:12px 0;
 
 text-decoration:none;
 
-background:#9f8368;
+background:linear-gradient(135deg,#b59778,#8b6d52);
 
 color:white;
 
-font-weight:bold;
+font-weight:600;
 
-border-radius:12px;
+border-radius:14px;
 
-transition:0.3s;
-
-font-size:17px;
+transition:all .3s ease;
 
 }
 
 .boton:hover{
 
-transform:scale(1.03);
+transform:translateY(-3px);
 
-background:#8c725a;
+}
+
+.info{
+
+margin-top:25px;
+
+color:white;
+
+line-height:1.8;
+
+font-size:14px;
 
 }
 
@@ -120,13 +138,25 @@ margin-top:30px;
 
 padding-top:25px;
 
-border-top:1px solid #d5c6b6;
+border-top:1px solid rgba(255,255,255,0.2);
 
-font-size:15px;
+color:white;
 
-line-height:1.8;
+line-height:1.9;
 
-color:#4a4038;
+font-size:14px;
+
+text-align:left;
+
+}
+
+.footer{
+
+margin-top:25px;
+
+font-size:13px;
+
+color:#f5e8d8;
 
 }
 
@@ -138,48 +168,68 @@ color:#4a4038;
 
 <div class="contenedor">
 
-<h1>ANDREAS</h1>
+<div class="logo">
+ANDREAS
+</div>
 
-<p class="subtitulo">
-Indumentaria femenina y masculina
-</p>
+<div class="frase">
+Moda femenina y masculina
+</div>
 
 <a class="boton" href="#nosotros">
 👥 NOSOTROS
 </a>
 
-<a class="boton"
-href="https://instagram.com/andreas_ind_"
-target="_blank">
+<a class="boton" href="https://instagram.com/andreas_ind_" target="_blank">
 📸 INSTAGRAM
 </a>
 
-<a class="boton"
-href="https://wa.me/5492613343891"
-target="_blank">
+<a class="boton" href="https://wa.me/5492613343891" target="_blank">
 💬 WHATSAPP
 </a>
 
-<a class="boton"
-href="https://tiktok.com/@andreas_ind_"
-target="_blank">
+<a class="boton" href="https://tiktok.com/@andreas_ind_" target="_blank">
 🎵 TIKTOK
 </a>
 
+<div class="info">
+
+📍 Mendoza, Argentina
+
+<br><br>
+
+🏬 Galería Independencia <br>
+Lavalle 35 - Local 34
+
+<br><br>
+
+🕒 Lunes a Sábado <br>
+11:00 a 20:00 hs
+
+</div>
+
 <div id="nosotros" class="nosotros">
 
-<p>
+Andreas Indumentaria es una tienda de ropa femenina y masculina ubicada en Mendoza, Argentina.
 
-En Andreas Indumentaria seleccionamos prendas para hombres y mujeres que buscan combinar comodidad, estilo y tendencia.
+<br><br>
 
-Trabajamos con propuestas casuales, formales y oversize, acompañando cada temporada con prendas versátiles y actuales para que encuentres tu mejor versión en cada ocasión.
+Nos especializamos en prendas casuales, formales y oversize, seleccionadas para quienes buscan combinar comodidad, tendencia y estilo en cada ocasión.
 
-</p>
+<br><br>
+
+Trabajamos para ofrecer propuestas versátiles y actuales que acompañen tu día a día y te permitan expresar tu personalidad a través de la moda.
+
+</div>
+
+<div class="footer">
+
+ANDREAS INDUMENTARIA
 
 </div>
 
 </div>
 
 </body>
-
 </html>
+
