@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ANDREAS INDUMENTARIA</title>
+<title>Andreas Indumentaria</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -18,20 +18,30 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
+
+font-family:'Montserrat',sans-serif;
 
 background:
 linear-gradient(
-rgba(0,0,0,0.35),
-rgba(0,0,0,0.35)
+rgba(0,0,0,.35),
+rgba(0,0,0,.35)
 ),
-url("8450b8f4-45b0-481b-ad07-8da69cca45ff.jpg");
+url("fondo.jpg");
 
 background-size:cover;
 background-position:center;
 background-attachment:fixed;
 
-font-family:'Montserrat',sans-serif;
+color:#fff;
+
+}
+
+.hero{
 
 min-height:100vh;
 
@@ -43,50 +53,44 @@ padding:20px;
 
 }
 
-.contenedor{
+.card{
 
 width:100%;
-max-width:500px;
+max-width:520px;
 
-background:rgba(255,255,255,0.12);
+background:rgba(255,255,255,.12);
 
-backdrop-filter:blur(18px);
+backdrop-filter:blur(16px);
 
-border:1px solid rgba(255,255,255,0.15);
+border:1px solid rgba(255,255,255,.15);
 
-border-radius:30px;
+border-radius:28px;
 
-padding:40px 30px;
-
-box-shadow:0 20px 50px rgba(0,0,0,0.25);
+padding:35px;
 
 text-align:center;
+
+box-shadow:0 20px 60px rgba(0,0,0,.25);
 
 }
 
 .logo{
 
-font-family:'Cormorant Garamond',serif;
+width:220px;
+max-width:100%;
 
-font-size:60px;
-
-letter-spacing:6px;
-
-color:#fff;
-
-margin-bottom:5px;
+margin-bottom:10px;
 
 }
 
-.frase{
-
-color:#f4ede5;
+.subtitulo{
 
 font-size:14px;
+letter-spacing:2px;
 
-margin-bottom:30px;
+margin-bottom:25px;
 
-letter-spacing:1px;
+color:#f5e8d8;
 
 }
 
@@ -102,7 +106,7 @@ margin:12px 0;
 
 text-decoration:none;
 
-background:linear-gradient(135deg,#b59778,#8b6d52);
+background:linear-gradient(135deg,#c1a283,#8b6b52);
 
 color:white;
 
@@ -110,7 +114,7 @@ font-weight:600;
 
 border-radius:14px;
 
-transition:all .3s ease;
+transition:.3s;
 
 }
 
@@ -124,39 +128,123 @@ transform:translateY(-3px);
 
 margin-top:25px;
 
-color:white;
+font-size:14px;
 
 line-height:1.8;
 
-font-size:14px;
+}
+
+.galeria{
+
+background:#f7f1ea;
+
+padding:60px 20px;
+
+}
+
+.galeria h2{
+
+text-align:center;
+
+color:#5c4535;
+
+margin-bottom:30px;
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:42px;
+
+}
+
+.grid{
+
+max-width:1000px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+.grid img{
+
+width:100%;
+
+height:350px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.grid img:hover{
+
+transform:scale(1.03);
 
 }
 
 .nosotros{
 
-margin-top:30px;
+background:white;
 
-padding-top:25px;
+padding:70px 25px;
 
-border-top:1px solid rgba(255,255,255,0.2);
+}
 
-color:white;
+.nosotros-contenido{
 
-line-height:1.9;
+max-width:800px;
 
-font-size:14px;
+margin:auto;
 
-text-align:left;
+}
+
+.nosotros h2{
+
+text-align:center;
+
+margin-bottom:25px;
+
+font-size:42px;
+
+font-family:'Cormorant Garamond',serif;
+
+color:#5c4535;
+
+}
+
+.nosotros p{
+
+color:#4d433c;
+
+line-height:2;
+
+font-size:16px;
+
+text-align:center;
 
 }
 
 .footer{
 
-margin-top:25px;
+background:#5c4535;
 
-font-size:13px;
+color:white;
 
-color:#f5e8d8;
+padding:35px;
+
+text-align:center;
+
+line-height:1.8;
 
 }
 
@@ -166,15 +254,15 @@ color:#f5e8d8;
 
 <body>
 
-<div class="contenedor">
+<section class="hero">
 
-<div class="logo">
-ANDREAS
-</div>
+<div class="card">
 
-<div class="frase">
-Moda femenina y masculina
-</div>
+<img src="logomarca.jpg" class="logo">
+
+<p class="subtitulo">
+MODA FEMENINA Y MASCULINA
+</p>
 
 <a class="boton" href="#nosotros">
 👥 NOSOTROS
@@ -192,23 +280,56 @@ Moda femenina y masculina
 🎵 TIKTOK
 </a>
 
+<a class="boton" href="https://maps.google.com/?q=Lavalle+35+Local+34+Mendoza+Argentina" target="_blank">
+📍 CÓMO LLEGAR
+</a>
+
 <div class="info">
 
 📍 Mendoza, Argentina
 
 <br><br>
 
-🏬 Galería Independencia <br>
+🏬 Galería Independencia
+<br>
 Lavalle 35 - Local 34
 
 <br><br>
 
-🕒 Lunes a Sábado <br>
+🕒 Lunes a Sábado
+<br>
 11:00 a 20:00 hs
 
 </div>
 
-<div id="nosotros" class="nosotros">
+</div>
+
+</section>
+
+<section class="galeria">
+
+<h2>Nueva Colección</h2>
+
+<div class="grid">
+
+<img src="producto1.jpg">
+<img src="producto2.jpg">
+<img src="producto3.jpg">
+<img src="producto4.jpg">
+<img src="producto5.jpg">
+<img src="producto6.jpg">
+
+</div>
+
+</section>
+
+<section id="nosotros" class="nosotros">
+
+<div class="nosotros-contenido">
+
+<h2>Nosotros</h2>
+
+<p>
 
 Andreas Indumentaria es una tienda de ropa femenina y masculina ubicada en Mendoza, Argentina.
 
@@ -220,16 +341,29 @@ Nos especializamos en prendas casuales, formales y oversize, seleccionadas para 
 
 Trabajamos para ofrecer propuestas versátiles y actuales que acompañen tu día a día y te permitan expresar tu personalidad a través de la moda.
 
+<br><br>
+
+Te esperamos en Galería Independencia, Lavalle 35 Local 34.
+
+</p>
+
 </div>
 
-<div class="footer">
+</section>
+
+<footer class="footer">
 
 ANDREAS INDUMENTARIA
 
-</div>
+<br>
 
-</div>
+Mendoza, Argentina
+
+<br>
+
+📸 @andreas_ind_
+
+</footer>
 
 </body>
 </html>
-
